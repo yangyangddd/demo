@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties resource="jdbc.properties">
+    </properties>
+<!--    数据源对象-->
+    <!--定义别名-->
+
+<!--    注册类型处理器-->
+
+
+<environments default="developement">
+    <environment id="developement">
+        <transactionManager type="JDBC"></transactionManager>
+        <dataSource type="POOLED">
+            <property name="driver" value="${jdbc.driver}"/>
+            <property name="url" value="${jdbc.url}"/>
+            <property name="username" value="${jdbc.username}"/>
+            <property name="password" value="${jdbc.password}"/>
+        </dataSource>
+    </environment>
+</environments>
+<!--    加载映射关系 -->
+<!--<mappers>-->
+<!--&lt;!&ndash;    指定接口所在包&ndash;&gt;-->
+<!--    <package name="com.yang.mapper"/>-->
+<!--</mappers>-->
+<!--    加载映射文件-->
+    <!--    <mappers>-->
+    <!--        <mapper resource="com/mapper/userMapping.xml"></mapper>-->
+    <!--        <mapper resource="com/mapper/OrderMapper.xml"></mapper>-->
+    <!--    </mappers>-->
+
+</configuration>
