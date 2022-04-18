@@ -5,5 +5,8 @@ public class test {
         System.out.println("hsadasdad");
         System.out.println(2);
         System.out.println("123");
+        System.out.println(2);
+        System.out.println(23555);
+
     }
 }
